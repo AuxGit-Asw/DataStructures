@@ -35,8 +35,6 @@ void display(E *t, int n)
 }
 
 
-
-
 void merge(E *e, int start, int mid, int end, int option)
 {
     int p = mid - start + 1;
