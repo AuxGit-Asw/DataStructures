@@ -29,9 +29,9 @@ int decimal_to_binary(int decimal){
 
 //3. Find Largest of three numbers
 
-int largest_of_three_2(int a, int b, int c){
+int largest_of_three_2(int a, int b, int c){     //function definition
 
-    if (a > b && a > c){
+    if (a > b && a > c){                                 //if-else-if ladder
         return a;
     }
     else if (b > c){      
@@ -66,29 +66,29 @@ int largest_of_three_1(int a, int b, int c){
 
 int** matrix_addition(int **a, int **b, int m, int n){ // Assuming that the dimension of both are same
 
-    int **ans = malloc(sizeof(int)*(m*n));
+    int **ans = malloc(sizeof(int)*(m*n));                  
 
     for (int i = 0; i < m; i++){
         for (int j = 0; j < n; j++){
-            ans[i][j] = a[i][j] + b[i][j];
-        }
+            ans[i][j] = a[i][j] + b[i][j];                 //adding elements of two matices
+       
     }
 
-    return ans;
+    return ans;                           //returning ans value
 }
 
 
 //5. Reverse a number
 
-int reverse_a_number(int x){
+int reverse_a_number(int x){     //function definition
     int ans = 0;
     
-    while(x != 0){
+    while(x != 0){                       //while loop starts until x is not equals to 0
         ans = ans*10 + (x % 10);
         x /= 10;
     }
 
-    return ans;
+    return ans;                                 //returning reversed number
 }
 
 int reversDigits(int num) 

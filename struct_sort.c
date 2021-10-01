@@ -35,7 +35,6 @@ void display(E *t, int n)
 }
 
 
-// merging the elements according to the user given parameter which is saved in option variable
 void merge(E *e, int start, int mid, int end, int option)
 {
     int p = mid - start + 1;
